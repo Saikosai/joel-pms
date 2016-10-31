@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="joel-pms:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/joel_pms</output-path>
+    <root id="archive" name="joel-pms.war">
+      <element id="artifact" artifact-name="joel-pms:war exploded" />
+    </root>
+  </artifact>
+</component>
