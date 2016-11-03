@@ -1,4 +1,4 @@
-package com.services.joelpms;
+package com.joelpms.services;
 
 /**
  * Created by Joel on 10/31/16.
