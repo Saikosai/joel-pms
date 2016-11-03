@@ -1,13 +1,21 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="joel-pms:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/joel_pms_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/joel-pms-1.0-SNAPSHOT</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="joel-pms/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="joel-pms" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.2" />
+        </element>
       </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/joel-pms-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="joel-pms/web/Web" />
     </root>
   </artifact>
 </component>
