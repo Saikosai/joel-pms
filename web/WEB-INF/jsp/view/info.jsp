@@ -1,16 +1,11 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Joel
-  Date: 11/2/16
-  Time: 10:30 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<template:main htmlTitle="Info">
+    <div class="container">
+        <ol>
+            <li>Info 1</li>
+            <li>Info 2</li>
+            <li>Info 3</li>
+            <li>Info 4</li>
+            <li>Info 5</li>
+        </ol>
+    </div>
+</template:main>

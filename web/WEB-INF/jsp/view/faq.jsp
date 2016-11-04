@@ -1,19 +1,33 @@
+<%@ include file="/WEB-INF/jsp/base.jspf" %>
 <%@ taglib prefix="template" tagdir="/WEB-INF/tags/template" %>
 <template:main htmlTitle="Homepage">
     <div class="container">
-        <h2>Employees</h2>
-        <!--Search Form -->
-        <form action="/employee" method="get" id="seachEmployeeForm" role="form" >
-            <input type="hidden" id="searchAction" name="searchAction" value="searchByName"/>
-            <div class="form-group col-xs-5">
-                <input type="text" name="employeeName" id="employeeName" class="form-control" required="true"
-                       placeholder="Type the Name or Last Name of the employee"/>
-            </div>
-            <button type="submit" class="btn btn-info">
-                <span class="glyphicon glyphicon-search"></span> Search
+        <h2>MajorPMS FAQ</h2>
+
+        <div>
+            <p>Welcome to the FAQ page! View asked questions! See if your questions have been answered!
+                Find answers to questions you haven't thought of!</p>
+        </div>
+
+        <div>
+            <h2>Questions (<c:out value="${fn:length(questions)}" />)</h2>
+            <hr />
+            <c:choose>
+                <c:when test="${fn:length(questions) gt 0}">
+                    <c:forEach var="question" items="${questions}">
+                        ${question}
+                    </c:forEach>
+                </c:when>
+                <c:otherwise>
+                    <p>No questions have been asked yet! Be the first to ask a question!</p>
+                    <br />
+                </c:otherwise>
+            </c:choose>
+
+            <button id="newQuestion" class="btn btn-info" data-toggle="modal" data-target="#questionModal">
+                <span class="glyphicon glyphicon-plus"></span> New Question
             </button>
-            <br />
-            <br />
-        </form>
+            <template:question-modal></template:question-modal>
+        </div>
     </div>
 </template:main>

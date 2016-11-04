@@ -1,5 +1,7 @@
 package com.joelpms.servlets;
 
+import com.joelpms.helpers.Helper;
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -16,7 +18,7 @@ public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/jsp/view/home.jsp").forward(request, response);
+        request.getRequestDispatcher(Helper.VIEW_PATH + "home.jsp").forward(request, response);
     }
 
 }
