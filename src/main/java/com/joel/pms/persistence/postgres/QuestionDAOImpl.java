@@ -12,8 +12,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import static java.lang.System.out;
-
 public class QuestionDAOImpl implements QuestionDAO {
 
     private SqlSessionFactory sqlSessionFactory;
@@ -32,7 +30,7 @@ public class QuestionDAOImpl implements QuestionDAO {
     }
 
     private String qualifyStatementName(String name){
-        return Helper.QUESTION_MAPPER_PATH + name;
+        return Helper.QUESTION_MAPPER_NAMESPACE + name;
     }
 
     public void save(Question question) throws IOException {

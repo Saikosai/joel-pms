@@ -7,7 +7,7 @@ public class Question {
     private String content;
 
     public Question(){
-
+        
     }
 
     public int getId() {
