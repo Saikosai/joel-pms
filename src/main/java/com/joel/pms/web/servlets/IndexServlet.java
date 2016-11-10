@@ -1,6 +1,6 @@
-package com.joelpms.servlets;
+package com.joel.pms.web.servlets;
 
-import com.joelpms.helpers.Helper;
+import com.joel.pms.helpers.Helper;
 
 import java.io.IOException;
 

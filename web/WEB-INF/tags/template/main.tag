@@ -7,7 +7,8 @@
     <title><c:out value="${fn:trim(htmlTitle)}" /> MajorPMS</title>
     <link rel="stylesheet" href="<c:url value="/css/bootstrap.min.css" />">
     <link rel="stylesheet" href="<c:url value="/css/main.css" />">
-
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="<c:url value="/js/bootstrap.min.js" />"></script>
 
 </head>
 <body>
@@ -43,7 +44,6 @@
             <jsp:doBody />
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="<c:url value="/js/bootstrap.min.js" />"></script>
+
 </body>
 </html>
